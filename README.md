@@ -61,14 +61,30 @@ The rules are grounded in the literature, not vibes: Wobbrock & Kientz's contrib
 
 ## How to install
 
-**Claude.ai (web/desktop/mobile):** download the `.skill` file from the Releases page (or package the folder yourself), then go to **Settings → Capabilities → Skills → Upload skill**. Alternatively, send the `.skill` file to Claude in a chat and use the **Save skill** button on the file card.
+**Claude Code** (recommended — this repo is set up as a proper plugin marketplace):
 
-**Claude Code:** copy the `hci-academic-writing/` folder into `~/.claude/skills/` (personal) or `.claude/skills/` inside your project.
-
+```
 /plugin marketplace add Mseymur/HCI-Academic-Writing
 /plugin install hci-academic-writing@hci-academic-writing-marketplace
+```
 
-Then just write: "review my proposal draft," "is this a framework?", "tighten my related work" — the skill triggers on revision requests and framing questions, not only on drafting.
+The first command registers this repo as a marketplace; the second installs the skill from it. The `@hci-academic-writing-marketplace` part is the marketplace's internal name (set in `.claude-plugin/marketplace.json`), not the repo name — copy the command exactly as written above rather than substituting your own name.
+
+To update later, after pulling new commits:
+```
+/plugin marketplace update hci-academic-writing-marketplace
+```
+
+To remove it:
+```
+/plugin uninstall hci-academic-writing@hci-academic-writing-marketplace
+```
+
+**Claude.ai (web/desktop/mobile):** the `/plugin` commands above are Claude Code only. On claude.ai, download the `.skill` file from this repo's Releases page, then go to **Settings → Capabilities → Skills → Upload skill**. Alternatively, send the `.skill` file to Claude in a chat and use the **Save skill** button on the file card.
+
+Once installed on either platform, just write: "review my proposal draft," "is this a framework?", "tighten my related work" — the skill triggers on revision requests and framing questions, not only on drafting.
+
+**Note:** if you previously installed a skill called `academic-writing-style` or `academic-writing`, remove it — this skill supersedes both, and running duplicates causes overlap.
 
 ## Who this is for
 
@@ -79,4 +95,5 @@ HCI and interaction-design students first — the contribution taxonomy, the ven
 This skill encodes one set of validated reviewer feedback plus the primary literature; it does not encode your supervisor, your program's template, or your field's local dialect. Where your institution's guidance conflicts with the skill, the institution wins — the skill itself says so. Scope boundary, stated once.
 
 ## License
-MIT
+
+[Add your chosen license — MIT or CC BY 4.0 recommended. Without a LICENSE file, others cannot legally reuse or adapt this work.]
