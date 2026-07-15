@@ -67,8 +67,6 @@ The rules are grounded in the literature, not vibes: Wobbrock & Kientz's contrib
 
 Then just write: "review my proposal draft," "is this a framework?", "tighten my related work" — the skill triggers on revision requests and framing questions, not only on drafting.
 
-**Note:** if you previously installed a skill called `academic-writing-style`, remove it — this skill supersedes it, and running both causes overlap.
-
 ## Who this is for
 
 HCI and interaction-design students first — the contribution taxonomy, the venue conventions, and the examples are HCI-native. The register layer (defensive writing, limitation handling, traceability) applies to academic writing in any empirical field, so students in adjacent disciplines will still get most of the value.
