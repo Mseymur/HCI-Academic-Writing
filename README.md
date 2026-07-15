@@ -78,5 +78,4 @@ HCI and interaction-design students first — the contribution taxonomy, the ven
 This skill encodes one set of validated reviewer feedback plus the primary literature; it does not encode your supervisor, your program's template, or your field's local dialect. Where your institution's guidance conflicts with the skill, the institution wins — the skill itself says so. Scope boundary, stated once.
 
 ## License
-
-[Add your chosen license — MIT or CC BY 4.0 recommended. Without a LICENSE file, others cannot legally reuse or adapt this work.]
+MIT
