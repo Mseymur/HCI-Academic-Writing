@@ -65,6 +65,9 @@ The rules are grounded in the literature, not vibes: Wobbrock & Kientz's contrib
 
 **Claude Code:** copy the `hci-academic-writing/` folder into `~/.claude/skills/` (personal) or `.claude/skills/` inside your project.
 
+/plugin marketplace add Mseymur/HCI-Academic-Writing
+/plugin install hci-academic-writing@hci-academic-writing-marketplace
+
 Then just write: "review my proposal draft," "is this a framework?", "tighten my related work" — the skill triggers on revision requests and framing questions, not only on drafting.
 
 ## Who this is for
