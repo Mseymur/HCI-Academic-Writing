@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "hci-academic-writing-marketplace",
+  "owner": {
+    "name": "Seymur"
+  },
+  "plugins": [
+    {
+      "name": "hci-academic-writing",
+      "description": "Academic writing discipline for HCI students: register, framing, novelty claims, proposal writing, and Master's vs PhD calibration.",
+      "source": "./skills/hci-academic-writing",
+      "strict": false,
+      "skills": ["./"],
+      "category": "writing"
+    }
+  ]
+}
